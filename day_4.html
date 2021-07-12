@@ -5,7 +5,7 @@
 	
 	<title>Day_4</title>
     <style>
-        .outer{
+        .outer-circle{
             margin-left: 25%;
             margin-top: 100px;
             width: 500px;
@@ -14,7 +14,7 @@
             background-color: red;
             border: 5px solid lightgrey;
         }
-        .inner{
+        .inner-circle{
             border: 4px solid white;
             height: 400px;
             width: 400px;
@@ -26,9 +26,37 @@
             -webkit-box-shadow: inset 0 0 0 #000000;
            box-shadow:         inset 0 0 10px #000000;
         }
-        .outer .inner .hold{
+        .outer-circle .inner-circle .clock-ned {
             position: relative;
             bottom: 50%;
+        }
+
+        .outer-circle .inner-circle .hr-ned{
+            position:absolute;
+            top: 390px;	
+            left: 37%;
+            background-color: black;
+            transform: rotate(38deg);
+            width: 5px;
+            height: 169px;
+        }
+        .outer-circle .inner-circle .min-ned{
+            position: absolute;
+            top: 370px;	
+            left: 67%;
+            background-color: black;
+            transform: rotate(-55deg);
+            width: 5px;
+            height: 171px;
+        }
+        .outer-circle .inner-circle .sec-ned{
+            position: absolute;
+            top: 410px;	
+            left: 49%;
+            background-color: black;
+            transform: rotate(3deg);
+            width: 5px;
+            height: 169px;
         }
      
     </style>
@@ -36,10 +64,13 @@
 
 </head>
 <body>
-	<div class="outer">
-		<div class="inner">
-			
-				
+	<div class="outer-circle">
+		<div class="inner-circle">
+            <div class="clock-ned">
+                <span class="hr-ned"> </span>
+                <span class="min-ned"></span>
+                <span class="sec-ned"></span>
+            </div>
 			</div>
 		</div>
 	</div>
