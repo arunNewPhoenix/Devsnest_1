@@ -66,7 +66,7 @@ for (var i=0; i<arr.length; i++)  //use of nested loop
         }
         count=0;// of not assign count as 0
 }
-console.log(item+" ( " +mf +" times ) ") ;  //print statement in the console
+console.log(item+" ( " +maxFreq +" times ) ") ;  //print statement in the console
 
 
 //-------------------------------------------------------------------------------------------------------------------
