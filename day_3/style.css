@@ -4,7 +4,7 @@ body{
 }
 
 .content{
-  padding-top:px;
+  padding-top:0 px;
   display:flex;
   justify-content: center;
   margin-top: 20px;
@@ -12,10 +12,10 @@ body{
 .left-col{
   color:#50caa1;
    float:left;
-   height:74vh;
+   
    width:30vw;
    border:hidden;
-   padding: 1rem;
+   padding: 1rem 1.5rem;
    padding-top: 0px;
 
 }
@@ -24,9 +24,9 @@ body{
    color:#50caa1;
    float: left;
    border-left:3px solid #50caa1;
-   height:74vh;
+   
    width: 60%;
-   padding:1.5rem;
+   padding:1rem 1.5rem;
    padding-top: 0px;
 }
 
@@ -58,7 +58,7 @@ legend{
 }
 
 p{
-  font-size: 11px;
+  
   color: #50caa1;
   margin-top: 5px;;
   margin-bottom: 1.5rem;
@@ -67,13 +67,14 @@ p{
 h5{
   margin-top:0px;
   margin-bottom: .2rem;
+  position: relative;
 }
 
 ul{
   color:#50caa1;
   padding-left:.7rem;
   margin-top:5px;
-  font-size: 10px;
+  
   margin-bottom: 1.5rem;;
 }
 h6{
@@ -81,6 +82,7 @@ h6{
   margin-top:0px;
   margin-bottom: .2rem;
   font-family:'Times New Roman', Times, serif;
+  position: relative;
 }
 
 
@@ -93,4 +95,11 @@ h6{
 
 .padding-right{
   padding-top:70px;
+}
+
+h4{
+  margin-top:0px;
+  margin-bottom: .2rem;
+  position: relative;
+  
 }

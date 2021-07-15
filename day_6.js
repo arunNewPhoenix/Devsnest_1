@@ -61,12 +61,14 @@ for (var i=0; i<arr.length; i++)  //use of nested loop
                 if (maxFreq<count)//checking for maximum freq among the count and storing it everyTime as maxFreq
                 {
                   maxFreq=count; 
-                  item = arr1[i];  //the key value or the element which is found to be of max freq
+                  item = arr[i];  //the key value or the element which is found to be of max freq
                 }
         }
         count=0;// of not assign count as 0
 }
 console.log(item+" ( " +maxFreq +" times ) ") ;  //print statement in the console
+
+
 
 
 //-------------------------------------------------------------------------------------------------------------------
