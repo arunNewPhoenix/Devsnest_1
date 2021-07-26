@@ -10,18 +10,7 @@ listen the container element by assigning them event listener
 response from the function:
 1-> check for the first or second card assign them there properties----> check for that they are same or not--->if same dissolve else unflip
 
-container{
-  0:box;
-  1:box;
-  2:box;
-  3:box;
-  4:box;
-  5:box;
-  6:box;
-  7:box;
-  8:box;
-  
-} 
+document.querySelectorAll('.box'); creates an array of boxes and return.
 */
 let firstCard,secondCard;
 let lockBoard = false;
