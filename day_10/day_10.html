@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      height: 100vh;
+      display: flex;
+      background-image: url(assets/background-img.jpg);
+    }
+    
+    .container{
+      width: 640px;
+      height: 640px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      perspective: 1000px;
+    }
+    
+    .box {
+      width: calc(25% - 10px);
+      height: calc(33.333% - 10px);
+      margin: 5px;
+      position: relative;
+      box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+      transition: all .5s;
+      transform-style: preserve-3d;
+      transform: scale(1);
+      background-color: rgb(83, 134, 70);
+    }
+    
+    .box.flip {
+      transform: rotateY(180deg);
+    }
+    
+    .box:active {
+      transform: scale(0.97);
+      transition: transform .2s;
+    }
+    
+    .front-face,
+    .back-face {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      position: absolute;
+      backface-visibility: hidden;
+      border-radius: 5px;
+      
+    }
+    
+    .front-face {
+      transform: rotateY(180deg);
+    }
+    
+  
+    
+      .box{
+        width: calc(25% - 8px);
+        height: calc(33.333% - 8px);
+        margin: 4px;
+      }
+    
+      .front-face,
+      .back-face {
+        padding: 10px;
+      }
+    
+      img{
+        height: 200px;
+        width: 147px;
+        margin-top: -7px;
+        margin-left: -8px;
+
+      }
+    
+   h4{
+     font-size: 50px;
+     color: white;
+   }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  
+  <h4 id="moves">Moves:<span id="num">0</span></h4>
+
+
+  <div class="container">
+
+    <div class="box"  data-name="1">
+      <span class="front-face"><img src="assets/1.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="2">
+      <span class="front-face"><img src="assets/2.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="3">
+      <span class="front-face"><img src="assets/3.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="4">
+      <span class="front-face"><img src="assets/4.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="5">
+      <span class="front-face"><img src="assets/5.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="1">
+      <span class="front-face"><img src="assets/1.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="2">
+      <span class="front-face"><img src="assets/2.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="3">
+      <span class="front-face"><img src="assets/3.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="4">
+      <span class="front-face"><img src="assets/4.png"></span>
+      <span class="back-face"></span>
+    </div>
+    <div class="box" data-name="5">
+      <span class="front-face"><img src="assets/5.png"></span>
+      <span class="back-face"></span>
+    </div>
+   
+  </div>
+ <script  type="text/javascript"  src="script.js"></script>
+</body>
+</html>
